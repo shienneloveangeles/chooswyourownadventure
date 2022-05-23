@@ -1,0 +1,30 @@
+name1=input("What is your first name? ")
+name2=input("What is your last name? ")
+print("Hi there, "+ name1+" "+name2 +" ,nice to meet you!")
+print("How old are you?")
+age = int(input(" "))
+print(str(age) + " is a good age.")
+if(age >= 16):
+   print("You are old enough to drive. \n")
+else:
+   print("Still taking the bus, I see. \n")
+print("So, " + name1 + ", how are you today?")
+feel=input("")
+print("You are " + feel),
+if(feel== "Happy"):
+   print("That is good to hear.")
+elif(feel == "Sad"):
+   print("I'm sorry to hear that. ")
+else:
+   print("Oh my!")
+print("Tell me more. \n")
+next=input("")
+import random
+r = random.randint(1, 3)
+if(r==1):
+   print("Sounds interesting. \n")
+elif(r==2):
+   print("That's good to hear. \n")
+else:
+   print("How unusual. \n")
+print("Well, " + name1 + ", it has been nice chatting with you.")
