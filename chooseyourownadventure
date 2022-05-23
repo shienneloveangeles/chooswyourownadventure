@@ -1,0 +1,181 @@
+//variables
+string_t your_name;
+string_t name2;
+string_t cheat; 
+int introChoice, middleChoice1, middleChoice2, middleChoice3;
+int random_number = randint(1,10);
+int wheel_number = randint(1,10);
+
+//6 functions
+void cheatsheet(){
+    printf("Introduction -> Middle Option 1 -> Ending 1: Your friend dies, you survive..\n");
+    printf("Introduction -> Middle Option 1 -> Ending 2: Both of you survive and rebuild a community.\n");
+    printf("Introduction -> Middle Option 1 -> Ending 3: You drown. Both of you die.\n");
+    printf("Introduction -> Middle Option 2 -> Ending 4: The boat breaks, you both drown and die.\n");
+    printf("Introduction -> Middle Option 2 -> Ending 5: When the boat is broken, you blank out and get washed up on the island shore.\n");
+    printf("Introduction -> Middle Option 2 -> Ending 6: You go into a forest and at the end, you find a connection to the island.\n");
+    printf("Introduction -> Middle Option 3 -> Ending 7: Nothing happens, error, to be continued.\n");
+    printf("Introduction -> Middle Option 3 -> Ending 8: You get trapped.\n");
+    printf("Introduction -> Middle Option 3 -> Ending 9: You were tricked and fooled. Nothing was actually on the island.\n");
+}
+
+void intro(){
+    printf("What is your name? \n");
+    scanf("%s", &your_name);
+    printf("What is your friends name? \n");
+    scanf("%s", &name2);
+    printf("Would you like a cheat sheet for the story? Yes or No?\n");
+    scanf("%s", &cheat);
+    while (cheat != "Yes" && cheat != "No"){
+        printf("That's not a choice. Choose Yes or No.\n");
+        scanf("%s", &cheat);
+    }
+    if (cheat == "Yes"){
+        printf(cheatsheet());
+    }else{
+        printf("Okay! ");
+    }
+    printf("You have been living in this stone world for as long as you can remember, in search for another being to appear. Until one day, you cross paths with ", name2,".\n");
+    printf("'Where am I? Is anyone there? Hello?’ ",name2," exclaimed. You look at them with a smile.\n");
+    printf("'Look who it is, nice to see you again ",name2,"! In case you don’t remember, it’s me ",your_name,"!’ you said with enthusiasm.\n");
+    printf("You let out a big sigh of relief. Your friend ",name2," believes that they are dreaming.\n");
+    printf( name2, "finds a note in their pocket with a bunch of hints and instructions. ‘Where did this come from'", name2, "said confusingly. You and" ,name2, "decide to follow the directions in the note and come across a cave on the way. In that cave, there were three different tools to choose from, but you’re allowed to carry one. Choose one of the three tools to carry and use later on.\n");
+    printf("Choose your selection between the numbers 1) Axe, 2) Jackhammer, and a 3) String.");
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+void middle1(){
+    printf("You chose middle 1.");
+    printf("'" ,your_name, ", I think this was a really good choice,' ",name2," said. You thought so too. As you two continue wandering in the cave, you come across these unknown species. 'I think we should follow these creatures ",your_name,",' ",name2," said.\n");
+    printf("'I think so too. They might help us find a way to the Lost Island,' you said with excitement. The both of you start quickly following the flying creatures and they lead you out the cave, and in the distance, you see very hungry tigers in search for something to eat. The both of you need to think quick on how you will get past these hungry beasts..\n");
+    printf("Make your end choice: 1) Fight the Tigers with your Axe, 2) Discover a path, or 3) Run away \n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+void middle2(){
+    printf("You chose middle 2.");
+    printf("'",your_name," I think this was a really good choice.' You thought so too. ",name2," decides on wandering around the forest to hopefully find any new discoveries. You then find a pathway.\n");
+    printf("'",name2,"! I found a path. Let's follow this path. It could possibly help us get to the Lost Island,' you said with excitement. The both of you start walking towards the pathway. The sun starts to set down and torches around you start to light up. As you get to the end of the path, it ends up to a fork. You need to choose either the left, middle or right path.\n");
+    printf("Make your end choice: 1) Left, 2) Middle, or )Rightn");
+    scanf("%i", &middleChoice2);
+    while(middleChoice2 != 1 && middleChoice2 != 2 && middleChoice2 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice2);
+    }
+}
+void middle3(){
+    printf("You chose middle 3.");
+    printf("'",your_name,"! What were you thinking? Do you really think a string is going to save us?' ",name2," yelled at you with fear. You then start to contemplate your decisions. Maybe a string wasn't a good choice.”, name2, “was fairly upset with you. They stormed off and you just followed.\n");
+    printf("'Where are we? What happened to the forest? Where are you ",your_name,"?' ",name2," said with fear. You didn't know where anything was until the lights turned on. You randomly were now in a gameshow. There were mystery wheels with numbers and a button to press.\n");
+    printf("Make your end choice: 1) Press the random button , 2) Spin the number wheel , or 3) Do nothing \n");
+    scanf("%i", &middleChoice3);
+    while(middleChoice3 != 1 && middleChoice3 != 2 && middleChoice3 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice3);
+    }
+}
+void end1(){
+    printf("You chose end 1.");
+    printf("'",your_name,", I think we’re going to have to fight the tigers in order to get the gem. It’s the only way we’ll be able to make it,’ ",name2," said with a shake in their voice. You knew that it had to be done considering the fact that you had an axe. The tigers creep up on you and launch at you. With your adrenaline pumping, you don’t think but just slashing the axe at them. But, as you turn around, you see ",name2," on the ground at the urge of death. You couldn’t stop to come and save them. There was no time.\n");
+    printf("'I’m sorry ",name2,", you were the best. I’ll do this for us. For our friendship,’ you said in tears. As you get to the last tiger, you decide to look at ",name2," for the last time. You walk up the mountain in shame and guilt, wishing that you were there to help. You reach the top of the mountain and take the gem in your hands. This was the end of the game.\n");
+    exit (1);
+
+}
+void end2(){
+    printf("You see that on the left side, there was another path that could possibly lead you to another solution. The both of you walk to the left side of the mountain without the tigers noticing. You thought it was best that you start running up the mountain. So, the both of you try to run up to acquire the gem. When you reach the top of the mountain, you see the gem shining in the light.\n");
+    printf("'I think this might be the end ",your_name,". It was a great journey. Let’s try to get out of here,’ ",name2," said. The both of you picked up the gem together and were slowly dissolving into reality.\n");
+    exit (1);
+
+}
+void end3(){
+    printf("'RUN ",your_name,"!!’ ",name2," exclaimed. The both of you ran as fast as you could the other way of the jungle. As you run away, you hear the tigers start launching at the both of you with speed. With the last of your adrenaline, you run as fast as you can. ",name2," is trailing behind you and gets eaten.\n");
+    printf("'NOOO!’ you said as you run away. You reach the end of a cliff and the tigers start slowly creeping up to you. You had no choice but to jump. As you jump, you wished there was another way the both of you could live. You reach the bottom of the ravine and die. Game over.\n");
+    exit (1);
+}
+void end4(){
+    printf("Both you and ",name2," decide to go the left path. The both of you walked to the end of the path and the only thing left was a cliff. But when you decide to walk back to try a different path, a huge wall closes the both of you off.\n");
+    printf("'Is this really how we're gonna end this journey ",your_name,"?’ ",name2," said in a sad tone.\n");
+    printf("'It might be. I don’t want it to end like this just because we chose the left path. The only choice you have is to jump down the cliff, to your death. Game over.\n");
+    exit(1);
+}
+void end5(){
+    printf("You chose the middle choice. The both of you walk to the middle path. As you get to the middle a random noise occurs.\n");
+    printf("'",your_name,", did you hear that?’ ",name2," asked in fear. You did in fact hear that noise. The both of you freeze up and look around to find out where the sound is coming from. Then, these giant spiders come down from the trees and you get chased by them. The both of you run as fast as you can but get dropped down into a hole. The gem was right in front of you. It was your victory.\n");
+    exit(1);
+}
+void end6(){
+    printf("'Let's go to the right side ",your_name,". I think this might be a good choice,’ ",name2," said. You both choose to go to the right path. When walking, nothing seems to happen but just a peaceful walk. It could’ve been a peaceful ending for the both of you. The more you walk, the path starts to curve to the left side and down to a cave.\n");
+    printf("'Do you think we should go in ",name2,"?’ you questioned.\n");
+    printf("'Why not? There’s no other way out of this,’ ",name2," pointed out. So, you both go down the staircase into the cave. It was pitch black but started to glow with crystals glowing in the dark. It leads you to another path in the cave. The more you walk, the cave becomes brighter and brighter. Right in front of you, was the glowing green gem that the both of you have been looking for. You have won the game.\n");
+    exit(1);
+}
+void end7(){
+    printf("The both of you chose to press the random button. A projector full of numbers gets activated. The suspense is killing the both of you. As a few seconds pass by slowly, the numbers slow down.\n");
+    printf("'The number you chose was ",random_number,".'\n");
+    printf("'Was that it?’ you thought.\n");
+    printf("'Maybe there was an error. Can we try again?' ",name2," questioned.\n");
+    printf("'Minutes pass by. Nothing has happened. You both get confused about what has happened.\n");
+    printf("'",your_name," what are we supposed to do?' ",name2," asked.\n");
+    printf("'ERROR.’\n");
+    printf("'Oh no,’ you said.\n");
+    printf("To be continued..\n");
+    exit(1);
+}
+void end8(){
+    printf("The number wheel starts to spin. The suspense is killing the both of you. As a few seconds pass by slowly, the wheel begins to slow down. The number was ",wheel_number,". The two of you hope that this was a good number and it wasn’t going to lead to anything bad.\n");
+    printf("The number that was chosen was ",wheel_number,".\n");
+    printf("'Maybe this number will be a good one ",your_name,",’ ",name2," explained nervously. You hope so too.\n");
+    printf("'",wheel_number,", sudden death.’\n");
+    printf("Game Over. You lead yourself into a trap.\n");
+    exit(1);
+}
+void end9(){
+    printf("'To be honest, I think we should’ve chosen the number wheel. It was really giving me a good feeling,’ ",name2," said. Maybe it was. But, you trusted your gut feeling and decided to do nothing. Minutes go by. After a few minutes, half an hour goes by. Were the two of you just going to wait for nothing to happen? You then get a shock of teleportation and you’re both now at the top of the mountain right next to the gem.\n");
+    printf("'",your_name,". I am so confused. How did we just end up here? I mean hey, at least we got the gem,’ ",name2," said with relief. It was a test of patience to see if you could wait long enough. Game over.\n");
+    exit(1);
+}
+int main(){  //main program to run (logic)
+    intro();
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }
+    }
+    if(2 == introChoice) {
+        middle2();
+        if(middleChoice2 == 1){
+            end4();
+        }
+        if(middleChoice2 == 2){
+            end5();
+        }
+        if(middleChoice2 == 3){
+            end6();
+        }
+    }
+    if(3 == introChoice) {
+        middle3();
+        if(middleChoice3 == 1){
+            end7();
+        }
+        if(middleChoice3 == 2){
+            end8();
+        }
+        if(middleChoice3 == 3){
+            end9();
+        }
+    }
+}
