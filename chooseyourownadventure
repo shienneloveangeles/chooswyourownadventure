@@ -82,24 +82,24 @@ void middle3(){
 }
 void end1(){
     printf("You chose end 1.");
-    printf("'",your_name,", I think we’re going to have to fight the tigers in order to get the gem. It’s the only way we’ll be able to make it,’ ",name2," said with a shake in their voice. You knew that it had to be done considering the fact that you had an axe. The tigers creep up on you and launch at you. With your adrenaline pumping, you don’t think but just slashing the axe at them. But, as you turn around, you see ",name2," on the ground at the urge of death. You couldn’t stop to come and save them. There was no time.\n");
-    printf("'I’m sorry ",name2,", you were the best. I’ll do this for us. For our friendship,’ you said in tears. As you get to the last tiger, you decide to look at ",name2," for the last time. You walk up the mountain in shame and guilt, wishing that you were there to help. You reach the top of the mountain and take the gem in your hands. This was the end of the game.\n");
+    printf("'",your_name,", I think we’re going to have to fight the tigers in order to get to the island. It’s the only way we’ll be able to make it,’ ",name2," said with a shake in their voice. You knew that it had to be done considering the fact that you had an axe. The tigers creep up on you and launch at you. With your adrenaline pumping, you don’t think but just slashing the axe at them. But, as you turn around, you see ",name2," on the ground at the urge of death. You couldn’t stop to come and save them. There was no time.\n");
+    printf("'I’m sorry ",name2,", you were the best. I’ll do this for us. For our friendship,’ you said in tears. As you get to the last tiger, you decide to look at ",name2," for the last time. You walk up on the beach where you find a dock with a boat. in shame and guilt, wishing that you were there to help. You reach the end of shore hours later, you travel for hours with signs of life, maybe it won’t be so bad.\n");
     exit (1);
 
 }
 void end2(){
-    printf("You see that on the left side, there was another path that could possibly lead you to another solution. The both of you walk to the left side of the mountain without the tigers noticing. You thought it was best that you start running up the mountain. So, the both of you try to run up to acquire the gem. When you reach the top of the mountain, you see the gem shining in the light.\n");
-    printf("'I think this might be the end ",your_name,". It was a great journey. Let’s try to get out of here,’ ",name2," said. The both of you picked up the gem together and were slowly dissolving into reality.\n");
+    printf("You see that on the left side, there was another path that could possibly lead you to another solution. The both of you walk to the left side of the forest without the tigers noticing. You thought it was best that you start running through the forest. So, the both of you try to run up towards the shore. When you reach the other end of the shore you explore all over the island, and see a village. \n");
+    printf("'I think this might be the end ",your_name,". It was a great journey.\n");
     exit (1);
 
 }
 void end3(){
-    printf("'RUN ",your_name,"!!’ ",name2," exclaimed. The both of you ran as fast as you could the other way of the jungle. As you run away, you hear the tigers start launching at the both of you with speed. With the last of your adrenaline, you run as fast as you can. ",name2," is trailing behind you and gets eaten.\n");
-    printf("'NOOO!’ you said as you run away. You reach the end of a cliff and the tigers start slowly creeping up to you. You had no choice but to jump. As you jump, you wished there was another way the both of you could live. You reach the bottom of the ravine and die. Game over.\n");
+    printf("'RUN ",your_name,"!!’ ",name2," exclaimed. The both of you ran as fast as you could the other way of the forest. As you run away, you hear the tigers start launching at the both of you with speed. With the last of your adrenaline, you run as fast as you can. ",name2," is trailing behind you and gets eaten.\n");
+    printf("'NOOO!’ you said as you run away. You reach the end of the forest and the tigers start slowly creeping up to you. You had no choice but to try and swim as far as you can. As you jump, you wished there was another way the both of you could live. You reach the bottom of the ocean and drown. \n");
     exit (1);
 }
 void end4(){
-    printf("Both you and ",name2," decide to go the left path. The both of you walked to the end of the path and the only thing left was a cliff. But when you decide to walk back to try a different path, a huge wall closes the both of you off.\n");
+    printf("Both you and ",name2," decide to go the left path. The both of you walked to the end of the path and the only thing left was the ocean. But when you decide to walk back to try a different path, a huge wall closes the both of you off.\n");
     printf("'Is this really how we're gonna end this journey ",your_name,"?’ ",name2," said in a sad tone.\n");
     printf("'It might be. I don’t want it to end like this just because we chose the left path. The only choice you have is to jump down the cliff, to your death. Game over.\n");
     exit(1);
