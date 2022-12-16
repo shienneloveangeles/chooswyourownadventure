@@ -1,0 +1,173 @@
+// C++ code
+//
+int red1 = 8;
+int green1 = 7;
+int red2 = 6;
+int green2 = 5;
+int red3 = 4;
+int green3 = 3;
+int red4 = 2;
+int allLights[6]={3,5,6,9,10,11};
+int count = 0;
+void setup()
+{
+  for(int j=0;j<6;j++){
+    pinMode(allLights[j],OUTPUT);
+  }
+  /* pinMode(red1, OUTPUT);
+  pinMode(green1, OUTPUT);
+  pinMode(red2, OUTPUT);
+  pinMode(green2, OUTPUT);
+  pinMode(red3, OUTPUT);
+  pinMode(green3, OUTPUT);
+  pinMode(red4, OUTPUT);*/
+}
+
+void loop()
+{
+  for(int i=0;i<255;i++){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(2.5);
+  }
+  for(int i=255;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(2.5);
+  }
+  for(int i=0;i<255;i++){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(2.5);
+  }
+  for(int i=255;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(2.5);
+  }
+  for(int i=0;i<255;i++){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(2.5);
+  }
+  for(int i=255;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(2.5);
+  }
+  for(int i=0;i<255;i++){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(2.5);
+  }
+  for(int i=210;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(2.5);
+  }
+  //section 2
+  for(int i=25;i>0;i-=2){
+  	for(int j=0;j<6;j+=5){
+    digitalWrite(allLights[j],HIGH);
+   //delay(20);
+    }
+    delay(200);
+    for(int j=0;j<6;j+=5){
+    digitalWrite(allLights[j],LOW);
+   //delay(20);
+    }
+    delay(200);
+  }
+  //section 3
+  for(int i=2;i>0;i--){
+  	for(int j=1;j<6;j+=2){
+    digitalWrite(allLights[j],HIGH);
+   //delay(20);
+    }
+    delay(250);
+    for(int j=1;j<6;j+=2){
+    digitalWrite(allLights[j],LOW);
+   //delay(20);
+    }
+    delay(250);
+  
+    
+  for(int j=0;j<6;j+=2){
+    digitalWrite(allLights[j],HIGH);
+   //delay(20);
+    }
+    delay(250);
+    for(int j=0;j<6;j+=2){
+    digitalWrite(allLights[j],LOW);
+   //delay(20);
+    }
+    delay(250);
+  }
+    //section 4 
+    for(int i=0;i<255;i++){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(2.5);
+  }
+  for(int i=255;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(2.5);
+  }
+    /*for(int i=0;i<255;i++){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(2.5);
+  }
+  for(int i=255;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(2.5);*/
+  //}
+  //section 5
+  for(int i=51;i<256;i+=51){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      	//delay(10);
+    }
+    delay(1000);
+  }
+  for(int i=255;i>0;i--){
+    for(int j=0;j<6;j++){
+    	analogWrite(allLights[j],i);
+      //delay(20);
+    }
+    delay(10000);
+  }
+ 
+  
+  Serial.begin(9600);
+  count++;
+  Serial.print("loop ");
+  Serial.println(count);
+  
+}
